@@ -1,0 +1,41 @@
+#header-text {
+    text-align: center;
+}
+
+#hr1 {
+    border-top: 2px solid black;
+}
+
+#hr2 {
+    border-top: 3px solid black;
+}
+
+#sub-header-text {
+    text-align: center;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+.body-container {
+    border-top: 0px;
+    border: 1px solid black;
+}
